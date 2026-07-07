@@ -55,3 +55,12 @@ export function caesarCipher(input, traslation) {
     }
     return ciphered;
 }
+
+export function analyzeArray(array = [1, 2, 3]) {
+    const length = array.length;
+    const average = array.reduce((a, b) => a + b, 0) / length;
+    const max = array.reduce((a, b) => (a > b ? a : b));
+    const min = array.reduce((a, b) => (a < b ? a : b));
+
+    return { average: average, min: min, max: max, length: length };
+}
