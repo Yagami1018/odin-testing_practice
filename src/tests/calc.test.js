@@ -16,6 +16,7 @@ const calculatorTests = [
     new calculatorTest(3, "*", 4, 12),
     new calculatorTest(4, "/", 2, 2),
     new calculatorTest(5, "/", 2, 2.5),
+    new calculatorTest(4,'/',0, Infinity)
 ];
 
 
