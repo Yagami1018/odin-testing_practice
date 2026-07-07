@@ -39,3 +39,13 @@ export function calculate(a, operator, b) {
             );
     }
 }
+
+export function caesarCipher(input, traslation) {
+    let ciphered = "";
+    for (let char of input) {
+        let code = char.charCodeAt(0);
+        let base = char === char.toUpperCase() ? 65 : 97;
+        ciphered += String.fromCharCode(((code - base + traslation) % 26) + base);
+    }
+    return ciphered;
+}
