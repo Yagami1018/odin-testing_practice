@@ -43,7 +43,7 @@ export function calculate(a, operator, b) {
 export function caesarCipher(input, traslation) {
     let ciphered = "";
     for (let char of input) {
-        if (char === " ") {
+        if (!char.toLowerCase().match(/\w/)) {
             ciphered += char;
             continue;
         }

@@ -10,7 +10,7 @@ class cipherTest {
 }
 
 const cipherTests = [
-    new cipherTest('hello world', 3 , 'khoor zruog'),
+    new cipherTest('hello, world!', 3 , 'khoor, zruog!'),
     new cipherTest('Z',4,'D'),
     new cipherTest("Hello", 3, "Khoor"),
     new cipherTest("city", 3, "flwb"),
